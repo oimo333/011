@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+/* 共通部分-------------------------------------- */
+
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic",
+    sans-serif;
+  line-height: 1.7;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+/* レイアウト ----------------------------*/
+.wrapper {
+  max-width: 1120px;
+  margin: auto;
+  padding: 0 1.5rem;
+}
+
+.align-center {
+  text-align: center;
+}
+
+/* 見出し------------------------------------*/
+.font-english {
+  font-family: "Philosopher", sans-serif;
+  font-weight: normal;
+}
+
+.heading-large {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.page-title2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 2rem;
+  line-height: 1.4;
+  color: rgb(0, 0, 0);
+}
+/* ボタン -----------------------------------*/
+.btn {
+  display: inline-block;
+  font-size: 1.5rem;
+  background-color: rgb(36, 59, 187);
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  transition: 1s;
+}
+.btn:hover {
+  background-color: rgb(39, 39, 110);
+}
+
+/* ヘッダー
+------------------------------------------ */
+.page-header {
+  padding-top: 0.5rem;
+}
+.logo {
+  width: 100px;
+}
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  font-size: 1.5rem;
+  list-style: none;
+}
+.main-nav a {
+  color: rgb(19, 19, 19);
+}
+.main-nav a:hover {
+  color: #0bd;
+}
+/* ヘッダーカバー画像
+------------------------------- */
+.cover {
+  background-size: cover;
+  background-position: center bottom;
+  height: 800px;
+}
+
+.sub-cover {
+  background-size: cover;
+  background-position: center bottom;
+  height: 528px;
+  margin-bottom: 4rem;
+}
+
+/* HOME
+------------------------------- */
+.cover-home {
+  background-image: url(images/1.jpg);
+}
+.about {
+  max-width: 736px;
+  padding: 0 1.5rem;
+  margin: 3rem auto 0;
+}
+.about p {
+  margin-bottom: 3rem;
+}
+/* フッター--------------------------- */
+.page-footer {
+  background-image: url(images/footer-s.webp);
+  background-size: cover;
+  background-position: center;
+  padding-top: 12rem;
+}
+
+.info {
+  width: 100%;
+  max-width: 544px;
+  margin: auto;
+  padding: 0 1.5rem;
+  border-spacing: 0;
+}
+.info th,
+.info td {
+  border-bottom: 1px solid #c9c2bc;
+}
+.info th {
+  text-align: left;
+  font-weight: normal;
+  padding: 1rem;
+}
+.info td {
+  padding: 1rem 0;
+}
+.copyright {
+  background-color: rgb(99, 99, 99);
+  text-align: center;
+  padding: 2ren 0;
+  margin-top: 6rem;
+  color: #fff;
+}
+
+/* デスクトップ版------------------------------- */
+
+@media (min-width: 800px) {
+  /* 見出し ----------------------------------------*/
+
+  .heading-large {
+    font-size: 4rem;
+  }
+
+  .page-title2 {
+    font-size: 5rem;
+    margin-top: 10rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 3px #c9c2bc;
+  }
+  /* ヘッダー --------------------------------------*/
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+  }
+
+  .main-nav {
+    font-size: 2rem;
+  }
+
+  .sub-cover {
+    height: 400px;
+    margin-bottom: 6rem;
+  }
+
+  /* フッター---------------------------------- */
+  .page-footer {
+    background-image: url(images/footer-l.webp);
+    padding-top: 12rem;
+  }
+  .info th {
+    padding-left: 2.5rem;
+  }
+}
